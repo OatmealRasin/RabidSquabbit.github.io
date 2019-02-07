@@ -90,7 +90,7 @@ dew.on('show', function() {
         selectPlaylist(playlists[0]);
     });
     
-    dew.command('Game.HideH3UI 1');
+    
     dew.command('Settings.Gamepad').then((result) => {
         result = parseInt(result);
         //if(result) {
@@ -105,7 +105,7 @@ dew.on('show', function() {
 dew.on('hide', function() {
     visible = false;
     cancelRefresh();
-    dew.command('Game.HideH3UI 0');
+    
     swal.close();
 });
 
